@@ -1,19 +1,21 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-nav{
-    background-color: transparent;
-    position: fixed;
-    top: 0;
+nav {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
 }
 
-.logo{
-    width: 50px;
+.logo {
+  width: 50px;
 }
+
+/*# sourceMappingURL=style.css.map */
