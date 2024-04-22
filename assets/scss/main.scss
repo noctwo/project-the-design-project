@@ -1,7 +1,13 @@
+@use "_variables" as variables;
+@use "_fonts" as fonts;
+@use "_mixin" as mixin;
+
+
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    padding: variables.$padding-start;
+    margin: variables.$margin-start;
+    box-sizing: variables.$box-sizing;
+    font-family: fonts.$fontRoboto;
 }
 
 img{
@@ -16,4 +22,8 @@ nav{
 
 .logo{
     width: 50px;
+}
+
+button{
+    background-color: variables.$main-accent-color;
 }
