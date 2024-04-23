@@ -1,0 +1,20 @@
+@mixin gridOneTemplate{
+    display: grid;
+    grid-template-columns: repeat(4/*auto-fit*/, minmax(300px, 1fr));
+    gap: 1em;
+    grid-auto-rows: 400px;
+}
+
+@mixin cardTall{
+    grid-row: span 2 / auto;
+}
+
+@mixin cardWide{
+    grid-column: span 2 / auto;
+}
+
+@mixin cardBackground{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

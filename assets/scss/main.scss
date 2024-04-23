@@ -17,6 +17,26 @@
     }
 }
 
+.gallery-top, .gallery-bottom{
+    @include mixin.gridOneTemplate;
+
+    .gallery-top-img, .gallery-bottom-img{
+        @include mixin.cardBackground;
+    }
+}
+
+.card-tall{
+    @include mixin.cardTall;
+}
+
+.card-wide{
+    @include mixin.cardWide;
+}
+
+
+
+
+
 img{
     max-width: 100%;
 }

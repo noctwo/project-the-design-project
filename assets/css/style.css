@@ -17,6 +17,31 @@
   font-family: "Roboto";
 }
 
+.two-col-row-point img {
+  width: 35px;
+  height: 35px;
+}
+
+.gallery-top, .gallery-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 1em;
+  grid-auto-rows: 400px;
+}
+.gallery-top .gallery-top-img, .gallery-top .gallery-bottom-img, .gallery-bottom .gallery-top-img, .gallery-bottom .gallery-bottom-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-tall {
+  grid-row: span 2/auto;
+}
+
+.card-wide {
+  grid-column: span 2/auto;
+}
+
 img {
   max-width: 100%;
 }
