@@ -34,9 +34,9 @@ body, footer {
 
 .gallery-top, .gallery-bottom {
   display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 1em;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 200px;
 }
 .gallery-top .gallery-top-img, .gallery-top .gallery-bottom-img, .gallery-bottom .gallery-top-img, .gallery-bottom .gallery-bottom-img {
   background-position: center;
