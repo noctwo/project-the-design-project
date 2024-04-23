@@ -10,6 +10,13 @@
     font-family: fonts.$fontRoboto;
 }
 
+.two-col-row-point{
+    img{
+        width: variables.$icon-emoji-width;
+        height: variables.$icon-emoji-height;
+    }
+}
+
 img{
     max-width: 100%;
 }
