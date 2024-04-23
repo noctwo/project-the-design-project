@@ -22,8 +22,12 @@
   font-family: "Roboto";
 }
 
-body, footer {
-  max-width: 1440px;
+main {
+  margin: 0 auto;
+}
+
+.idea, .go, .cta {
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -37,6 +41,8 @@ body, footer {
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 1em;
   grid-auto-rows: 200px;
+  max-width: 95%;
+  margin: 0 auto;
 }
 .gallery-top .gallery-top-img, .gallery-top .gallery-bottom-img, .gallery-bottom .gallery-top-img, .gallery-bottom .gallery-bottom-img {
   background-position: center;
@@ -78,13 +84,31 @@ img {
 }
 
 nav {
+  width: 100%;
   background-color: transparent;
-  position: fixed;
-  top: 0;
+  margin: 0 auto;
 }
 
 .logo {
   width: 50px;
+  position: fixed;
+  top: 3em;
+}
+
+.logo-part {
+  margin: 3em 0 0 4em;
+}
+
+.hero {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/ilustration1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  margin-top: -6em;
 }
 
 .hero-scroll-dwn-btn {
@@ -116,7 +140,7 @@ nav {
 
 .step {
   color: #ddd;
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

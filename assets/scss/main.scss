@@ -10,10 +10,15 @@
     font-family: fonts.$fontRoboto;
 }
 
-body, footer{
-    max-width: 1440px;
+main{
     margin: 0 auto;
 }
+
+.idea, .go, .cta{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .two-col-row-point{
     img{
         width: variables.$icon-emoji-width;
@@ -23,6 +28,8 @@ body, footer{
 
 .gallery-top, .gallery-bottom{
     @include mixin.gridOneTemplate;
+    max-width: 95%;
+    margin: 0 auto;
 
     .gallery-top-img, .gallery-bottom-img{
         @include mixin.cardBackground;
@@ -64,13 +71,29 @@ img{
 }
 
 nav{
+    width: 100%;
     background-color: transparent;
-    position: fixed;
-    top: 0;
+    margin: 0 auto;
 }
 
 .logo{
     width: 50px;
+    position: fixed;
+    top: 3em;
+}
+
+.logo-part{
+    margin: 3em 0 0 4em;
+}
+
+.hero{
+    @include mixin.flexRowTextImage;
+    width: 100%;
+    background-image: url(../img/ilustration1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-top: -6em;
 }
 
 .hero-scroll-dwn-btn{
