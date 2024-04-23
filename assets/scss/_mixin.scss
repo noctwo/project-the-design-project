@@ -5,16 +5,31 @@
     grid-auto-rows: 400px;
 }
 
-@mixin cardTall{
-    grid-row: span 2 / auto;
-}
-
-@mixin cardWide{
-    grid-column: span 2 / auto;
-}
-
 @mixin cardBackground{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@mixin buttonPink{
+    padding: 1em 3em;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+@mixin flexRowTextImage{
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+
+@mixin step{
+    color: #ddd;
 }

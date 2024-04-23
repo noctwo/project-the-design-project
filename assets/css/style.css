@@ -1,3 +1,8 @@
+/*GENERAL*/
+/*COLORS*/
+/*ICONS*/
+/*GRID*/
+/*FONTs*/
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
@@ -15,6 +20,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto";
+}
+
+body, footer {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .two-col-row-point img {
@@ -35,11 +45,32 @@
 }
 
 .card-tall {
-  grid-row: span 2/auto;
+  grid-column: span 2/auto;
 }
 
 .card-wide {
-  grid-column: span 2/auto;
+  grid-row: span 2/auto;
+}
+
+h1, h2, h3 {
+  font-weight: "Roboto-Bold";
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 1rem;
 }
 
 img {
@@ -56,8 +87,36 @@ nav {
   width: 50px;
 }
 
-button {
+.hero-scroll-dwn-btn {
+  padding: 1em 3em;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  text-transform: uppercase;
   background-color: #FF3571;
+  font-family: "Roboto-Bold";
+}
+.hero-scroll-dwn-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.hero-scroll-dwn-btn:hover {
+  background-color: #543bef;
+}
+
+.img-left, .img-right {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+}
+.img-left .text-container, .img-right .text-container {
+  max-width: 45vw;
+  padding: 3em;
+}
+
+.step {
+  color: #ddd;
+  font-size: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

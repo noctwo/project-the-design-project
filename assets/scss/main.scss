@@ -10,6 +10,10 @@
     font-family: fonts.$fontRoboto;
 }
 
+body, footer{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .two-col-row-point{
     img{
         width: variables.$icon-emoji-width;
@@ -26,16 +30,34 @@
 }
 
 .card-tall{
-    @include mixin.cardTall;
+    grid-column: variables.$grid-col-two;
 }
 
 .card-wide{
-    @include mixin.cardWide;
+    grid-row: variables.$grid-row-two;
 }
 
 
+h1, h2, h3{
+    font-weight:fonts.$fontRoboto-bold;
+}
 
+h1{
+    font-size: variables.$font-lg;
+}
 
+h2{
+    font-size: variables.$font-md;
+}
+
+h3{
+    font-size: variables.$font-sm;
+    margin-bottom: 1em;
+}
+
+p{
+    font-size: variables.$font-copy;
+}
 
 img{
     max-width: 100%;
@@ -51,6 +73,26 @@ nav{
     width: 50px;
 }
 
-button{
+.hero-scroll-dwn-btn{
+    @include mixin.buttonPink;
     background-color: variables.$main-accent-color;
+    font-family: fonts.$fontRoboto-bold;
+
+    &:hover{
+        background-color: variables.$second-accent-color;
+    }
+}
+
+.img-left, .img-right{
+    @include mixin.flexRowTextImage;
+
+    .text-container{
+        max-width: 45vw;
+        padding: 3em;
+    }
+}
+
+.step{
+    @include mixin.step;
+    font-size: variables.$font-extra-lg;
 }
